@@ -4,7 +4,7 @@ let foods = ['Cream Puffs', 'Pizza', "S'More Cereal", 'Apples'];
 let foodsAsString = foods.join(', ');
 let currentYear = 2023;
 let profilePic = new Image();
-profilePic.src = 'resume_picture.jpg';
+profilePic.src = 'html/images/resume_picture.jpg';
 
 const nameElement = document.getElementById('name');
 const foodElement = document.getElementById('food');
@@ -13,7 +13,7 @@ const imageElement = document.querySelector('img');
 
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentYear;
-imageElement.setAttribute('src', 'images/resume_picture.jpg');
+imageElement.setAttribute('src', 'html/images/resume_picture.jpg');
 imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 foodElement.innerHTML = `${foodsAsString}`;
 
